@@ -7,15 +7,15 @@ router.get("/", (req, res) => {
 });
 
 // patients routes
-router.get("/patients", PatientController.index); // Get All Resource
-router.post("/patients", PatientController.store); // Add Resource
-router.put("/patients/:id", PatientController.update); // Edit Resource
-router.delete("/patients/:id", PatientController.destroy); // Delete Resource
-router.get("/patients/:id", PatientController.show); // Get Detail Resource
-router.get("/patients/search/:name", PatientController.search); // Search Resource by name
-router.get("/patients/status/positive", PatientController.positive); // Get Positive Resource
-router.get("/patients/status/recovered", PatientController.recovered); // Get Recovered Resource
-router.get("/patients/status/dead", PatientController.dead); // Get Dead Resource
+router.get("/patients", PatientController.index); 
+router.post("/patients", PatientController.store); 
+router.put("/patients/:id", PatientController.update); 
+router.delete("/patients/:id", PatientController.destroy); 
+router.get("/patients/:id", PatientController.show); 
+router.get("/patients/search/:name", PatientController.search); 
+router.get("/patients/status/positive", PatientController.positive); 
+router.get("/patients/status/recovered", PatientController.recovered); 
+router.get("/patients/status/dead", PatientController.dead); 
 
 //export router
 module.exports = router;
